@@ -15,8 +15,8 @@ def index():
 def authenticate():
         url = 'https://api.artsy.net/api/tokens/xapp_token'
         data = {
-            'client_id' : '59f1153a46d953b45ba2' ,
-            'client_secret' : 'e8fe0702caf7ceadc7c4ebc24da08b1a'
+            app.config['ARTSY_CLIENT_ID'] = os.getenv('ARTSY_CLIENT_ID')
+            app.config['ARTSY_CLIENT_SECRET'] = os.getenv('ARTSY_CLIENT_SECRET')
         }
         headers = {'Content-Type': 'application/json'}
     
@@ -102,4 +102,5 @@ def artist_detail():
 
 if __name__ == '__main__':
     app.run(debug=True,port=5000)
+
 
