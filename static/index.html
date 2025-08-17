@@ -1,0 +1,61 @@
+<!-- templates/login.html-->
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class = "design_header">
+			Artist Search
+		</div>
+	</header>
+
+	<form class="search_bar_div" id="search_form">
+		<img class="search_icon" id="search_operation" src="/static/images/search_icon.png"/>
+		<input class="search_bar" id="artist_id" name="artist_name" type="text" placeholder="Please enter an artist name." 
+		autocomplete="off" spellcheck="false" required>
+		<img class="clear_icon" id="clear_input" src="/static/images/clear_icon.png"/>
+	</form>
+
+	<div id = "artistNotFound" style="display: none;">
+		<div id = "artistNotFoundAlignMid">
+			<p>No results found.</p>
+		</div>
+	</div>
+
+	<div class = "container">
+		<div class = "holder" id="clickable_holders" style="display: none;">
+			<div class = "artistImage">
+			</div>
+			<div class = "artistName"></div>
+		</div>
+	</div>
+
+	<div class = "artist_detail">
+		<div class = "artist_name_period">
+		</div>
+		<div class = "nationality">
+		</div>
+		<div class = "biography">
+		</div>
+	</div>
+
+	<div>
+		<img id="loading_gif" src = "/static/images/loading.gif">
+	</div>
+
+	<footer>
+		<div class = "design_footer">
+				Powered by
+				<img class = "logo" src = "/static/images/artsy_logo.svg" href = "https://www.artsy.net/">
+				<a id = "artsy_footer" style = "text-decoration:none" href = "https://www.artsy.net/">Artsy.</a>
+		</div>
+	</footer>
+
+	<script src="/static/js/index.js"></script>
+</body>
+
+</html>

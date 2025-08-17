@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.design_header{
+    background-color: #ececec;
+    width : 99%;   
+    height: 50px;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    padding-left: 1%;
+}
+.search_bar_div{
+    position: relative;
+    font-family: arial;
+    top: 7%;
+    left: 30%;
+    right: 30%;
+    height: 50px;
+    width: 40%;
+    /*margin-top: 50px;
+    text-align: center;
+    background-color: blanchedalmond;*/
+}
+.search_bar_div input{
+    width: 100%;
+    height: 60%;
+    font-family: arial;
+    border-radius: 13px;
+    border-style: solid;
+    padding-left: 30px;
+    padding-right: 17px;
+}
+.search_bar_div input:focus{
+    outline: 1px solid #e2752c;
+    border: 1px solid #e2752c;
+}
+.search_icon{
+    position: absolute;
+    left:7px;
+    top: 5.5px;
+    height : 20px;
+    width : 20px;
+    cursor: pointer;
+    opacity: 0.6;	
+}
+.search_icon:hover{
+    opacity: 1;
+}
+.clear_icon{
+    position: absolute;
+    right:10px;
+    top:8px;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    opacity: 0.6;
+}
+.clear_icon:hover{
+    opacity: 1;
+}
+#loading_gif{
+    position: absolute;
+    align-items: center;
+    background-color: #a817a1;
+    height: 100px;
+    width: 100px;
+    top: 20%;
+    right: 47%;
+    left: 47%;
+    display: none;
+}
+#artistNotFound{
+    font-family: arial;
+    background-color: #aaa39f;
+    width: 42%;
+    right: 29%;
+    left: 29%;
+    position: relative;
+    top: 10%;
+    height: 50px;
+    border-radius: 17px;
+    text-align: center;
+}
+#artistNotFoundAlignMid{
+    font-family: arial;
+    vertical-align: middle;
+    position: relative;
+    top:30%;
+    height: 40%;
+    bottom: 30%;
+}
+.container{
+    font-family: arial;
+    display: flex;
+    position: relative;
+    top: 12%;
+    left: 7%;
+    right: 7%;
+    height: 300px;
+    width: 86%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.container .holder{
+    font-family: arial;
+    min-width: 207px;
+    height: 280px;
+    /*line-height: 50px;*/
+    text-align: center;
+    background-color: #205375;
+    border: 5px solid white;
+    display: none;
+}
+.container.active .holder {
+    display: block;
+}
+.container .holder:hover{
+    background-color: #112B3C;
+    cursor: pointer;
+}
+.container.active .holder.clicked {
+    background-color: #112B3C; /* Dark Blue when clicked */
+}
+.container .holder:active{
+    background-color: #112B3C;
+}
+.artistImage{
+    position: relative;
+    top : 7%;
+    width:87%;
+    left: 5%;
+    right: 5%;
+    height: 60%;
+    border-radius: 50%;
+    border: 5px solid white;
+    align-items: center;
+
+}
+.artistName{
+    font-size: 20px;
+    font-family: arial;
+    font-weight:500;
+    position: relative;
+    top: 15%;
+    color: white;
+}
+.artist_detail{
+    position: relative;
+    top: 15%;
+    left : 20%;
+    right: 20%;
+    width: 60%;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.artist_name_period{
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.nationality{
+    font-family: arial;
+    font-size: 17px;
+    text-align: center;
+}
+.biography{
+    font-family: arial;
+    font-size: 15px;
+    text-align: justify;
+}
+.design_footer{
+    font-family: arial;
+    height:50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: #122533;
+    text-align: center;
+    color: white;
+    display: inline;
+}
+.logo{
+    height :20px;
+    width: 20px;
+    display: inline;
+    margin-top: 15px;
+    vertical-align: text-bottom;
+}
+#artsy_footer{
+    color: white;
+}
